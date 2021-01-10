@@ -1,0 +1,31 @@
+We have given problem 1 to n one number is missing and other number is duplicate find missing and duplicate element 
+Input: arr[] = {1,2,4,3,2}
+Output: 5 2
+Explanation: The missing number is 5 duplicate element is 2
+
+Approach---
+we can apply hashmap where we can store the element and their frequency 
+in hashmap element can be any order so ,we can use TreeMap that is in sorted 
+1--1
+2--2
+3--1
+4--1
+
+first we can check one by one element
+first check element is present or not then check the frequency of elemement if it is more than one then it will duplicate element
+
+//second approach is mathmatical
+lets idle array look like ={a,b,c,d,e}  f1
+but according to question one is missing and one is duplicate{a,b,c,c,d} here c is dup and e is missing f2
+now we have to find two variable c and e that require two equation to solve 
+first equation we can get by f1-f2 that give e-c
+second equation we can get by f1^2-f2^2 that give e^2-c^2 now we f2/f1 that give e+c 
+now you have two equation and two variable you can solve .
+
+Limitation --we can not scale this solution if no of duplicate and missing element is increasing it will increase the time complexity .
+
+
+// main solution 
+
+I will write it latter
+
